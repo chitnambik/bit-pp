@@ -41,14 +41,16 @@ function oddNumber(one) {
 // * *
 // * *
 // *****
-    var a = 12;
-    var b = '';
+var a = 8;
+b = '';
+function square (b) {
     for(let i = 1; i <= a; i++) {
         for(let j = 1; j <= a; j++){
             b += '*';
-        }
-        b += '\n';
-} console.log(b)
+    } b += '\n';
+} return b
+}
+console.log(square(b))
     
 
 // 6. Write a program that draws a horizontal chart representing three given values. For
