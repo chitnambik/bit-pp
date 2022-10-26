@@ -123,11 +123,11 @@ function howManyTimes (a) {
     resA = 0;
     for(let i = 0; i < a.length; i++) 
         if(e === a[i]) {
-            resa++} 
-            else if (c === a[i]) {
+            resa++
+        } else if (c === a[i]) {
             resA ++
-            } return 'malo a ' + resa + ' puta, veliko A ' + resA + ' puta'
-        }  
+    } return 'malo a ' + resa + ' puta, veliko A ' + resA + ' puta'
+}  
 console.log(howManyTimes(a))
 
 // 11. Write a program that concatenates a given string given number of times. For example, if
