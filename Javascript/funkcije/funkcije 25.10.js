@@ -69,7 +69,7 @@ for(let i = 1; i <= a; i++) {
 for(let i = 1; i <= b; i++) {
         e += '*'; }
 for(let i = 1; i <= c; i++) {
-            f += '*';
+        f += '*';
 }
 console.log(d)
 console.log(e)
@@ -115,17 +115,19 @@ console.log(sumOfOdd(a, sum))
 // 10. Write a program that calculates the number of appearances of a letter a in a given string.
 // Modify the program so it calculates the number of both letters a and A.
 
-let a = 'araaaameniAna'
-let res = 0;
-function howManyTimes (a, e, c, res) {
+let a = 'araaAAaameniAna'
+function howManyTimes (a) {
     e = 'a';
     c = 'A'
-    res = 0;
+    resa = 0;
+    resA = 0;
     for(let i = 0; i < a.length; i++) 
-        if(e === a[i] || c === a[i]) {
-            res = res + 1
-    }  return res
-} 
+        if(e === a[i]) {
+            resa++} 
+            else if (c === a[i]) {
+            resA ++
+            } return 'malo a ' + resa + ' puta, veliko A ' + resA + ' puta'
+        }  
 console.log(howManyTimes(a))
 
 // 11. Write a program that concatenates a given string given number of times. For example, if
