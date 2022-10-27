@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Pacifico', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap')
+}
+@font-face {
+    font-family: 'Joker', sans-serif;
+    src: url(http://fonts.cdnfonts.com/css/joker);
+}
+.one {
+    font-family: 'Pacifico', cursive;
+}
+
+.two {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+
+.three {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+.quote1 {
+    color: red;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.quote2 {
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.quote3 {
+    color: aquamarine;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.one {
+    font-size: 30px;
+}
+
+#span {
+    font-weight: bold;
+    color: blue;
+    font-style: italic;
+}
+h1 {
+    font-family: 'Joker', sans-serif;
+}

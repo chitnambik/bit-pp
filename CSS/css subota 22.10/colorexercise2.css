@@ -1,0 +1,24 @@
+/* table {
+    background-color: olivedrab;
+    border: darkgreen;
+} */
+
+.firstCol {
+    background-color: aliceblue
+}
+
+.secondCol {
+    background-color: hotpink;
+}
+
+.thirdCol {
+    background-color: olivedrab;
+}
+
+.fourthCol {
+    background-color: aquamarine;
+}
+
+.fifthCol {
+    background-color: goldenrod;
+}

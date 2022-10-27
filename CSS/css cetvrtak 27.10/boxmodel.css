@@ -1,0 +1,112 @@
+.prvi {
+    background-color: yellow;
+    width: 400px;
+    height: 500px;
+    max-width: 300px;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+.drugi {
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    max-height: 200px;
+}
+
+#first {
+    border-width: thick;
+    background-color: yellow;
+    border-color: red;
+    border-style: dashed;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    padding: 50px;
+    margin: 50%;
+}
+
+#second {
+    border-width: thick;
+    background-color: yellow;
+    border-color: green;
+    border-style: solid;
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#third {
+    border-width: thick;
+    background-color: yellow;
+    border-color: red;
+    border-style: dashed;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+#four {
+    border-width: thick;
+    background-color: yellow;
+    border-color: red;
+    border-style: dashed;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    padding: 0px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+#five {
+    border-width: thick;
+    background-color: yellow;
+    border-color: green;
+    border-style: solid;
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+    padding: 0px;
+    margin-right: 20px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+#six {
+    border-width: thick;
+    background-color: yellow;
+    border-color: red;
+    border-style: dashed;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    padding: 0px;
+    margin-right: 20px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.boxdiv {
+    max-width: 960px;
+    min-height: 100;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: burlywood;
+    box-shadow: 10px 5px 5px green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-style: oblique;
+    border-radius: 18px;
+}

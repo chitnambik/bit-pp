@@ -1,0 +1,15 @@
+.prviP {
+    color: hsl(181, 100%, 41%);
+    background-color: bisque;
+    opacity: 50%;
+}
+
+.drugiP {
+    color: rgb(0, 206, 209);
+    background-color: rgba(255, 228, 196, 50%);
+}
+
+.treciP {
+    color: #00ced1;
+    background-color: #ffe4c4;
+}

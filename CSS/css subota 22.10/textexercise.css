@@ -1,0 +1,15 @@
+.one {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
+.two {
+   @font-face {
+    font-family: 'LobsterRegular';
+    src: url('fonts/LobsterRegular.ttf');
+   }
+}
+
+.three {
+    font-family: monospace;
+}

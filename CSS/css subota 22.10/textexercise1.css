@@ -1,0 +1,17 @@
+.prviP {
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+.drugiP {
+    text-transform: lowercase;
+    text-decoration:line-through;
+    line-height: 200%;
+    text-align: right;
+}
+
+.treciP {
+    text-align: center;
+}
