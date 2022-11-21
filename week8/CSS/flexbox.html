@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.flexContainer {
+    margin: 0;
+    display: flex;
+    color: white;
+    height: 400px;
+    width: 700px;
+}
+
+.threeElements {
+    flex-direction: column;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.child1 {
+    background-color: #e6d15e;
+    padding: 57.7px 20px;
+}
+
+.child2 {
+    background-color: #332619;
+    padding: 57.8px 20px;
+
+}
+
+.child3 {
+    background-color:#eba04b;
+    padding: 57.7px 20px;
+
+}
+
+.child4 {
+    background-color: #a35f81;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+</style>
+<body>
+<div class="flexContainer">
+    <div class="child4">4</div>
+    <div class="threeElements">
+        <div class="child2">3</div>
+        <div class="child3">2</div>
+        <div class="child1">1</div>
+    </div>
+</div>
+</body>
+</html>

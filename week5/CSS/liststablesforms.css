@@ -1,0 +1,131 @@
+
+.jedan {
+    list-style-type: circle;
+}
+
+
+#dva {
+    list-style-type:square;
+}
+
+.tri {
+    list-style-type:upper-latin;
+}
+
+#cetiri {
+    list-style-type:lower-roman;
+}
+
+.pet {
+    width: 200px;
+    list-style-image: url(./icon.png);
+    list-style-position: inside;
+}
+
+.sest {
+    width: 200px;
+    list-style-image: url(./icon.png);
+    list-style-position: inside;
+}
+
+.header {
+    background-color: rgb(187, 10, 10);
+    color: white;
+    width: 80px;
+    height: 40px;
+   
+}
+
+#tabela {
+    width: 600px;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0px;
+}
+
+.row1:hover {
+ background-color: rgb(236, 183, 8);
+}
+
+.row2:hover {
+    background-color: rgb(236, 183, 8);
+}
+
+.row3:hover {
+    background-color: rgb(236, 183, 8);
+}
+
+.row4:hover {
+    background-color: rgb(236, 183, 8);
+}
+
+.row1 {
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row2 {
+    background-color: rgb(216, 212, 212);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(216, 212, 212);
+}
+
+.forma {
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgba(229, 231, 203, 0.87);
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    height: 400px;
+    opacity: 80%;
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
+.get{
+    color: orange;
+}
+.naslov{
+    font-size: 36px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.hr {
+    width: 90%;
+}
+
+.field {
+    border: 3px;
+    border-radius: 3px;
+    background-color: white;
+    border: 0px;
+    box-shadow: 0px 2px 2px 2px rgba(128, 128, 128, 0.5);
+    width: 200px;
+}
+
+.button{
+    width: 200px;
+    background-color: rgb(187, 52, 52);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    border-collapse: collapse;
+    height: 30px;
+}

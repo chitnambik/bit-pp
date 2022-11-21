@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@font-face {
+    font-family: Roboto-Light;
+    src: url(./fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+
+.banner {
+    position: relative;
+}
+
+.image {
+background-image: url(./images/banner3.jpg);
+background-size: cover;
+width: 100%;
+height: auto;
+}
+
+.headerText {
+position: absolute;
+top: 35%;
+left: 17%;
+right: 15%;
+width: 100%;
+color: white;
+transform: scale(120%, 120%);
+font-family: Roboto-Light;
+}
+
+.headerButton{
+position: absolute;
+top: 50%;
+left: 45%;
+right: 45%;
+height: auto;
+padding: 8px 20px;
+color: white;
+background-color: #0270ff;
+border: none;
+border-radius: 20px;
+}
+
+.container {
+    position: absolute;
+    
+}
+
+.navbar {
+    top: 0%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+  
+.nav-bar-new {
+    display: flex;
+    float: right;
+    list-style-type: none;
+    color: white;
+    font-family: Roboto-Bold;
+    font-size: small;
+}
+  
+.nav-link-new {
+    left: 45%;
+    color: white;
+    padding-right: 15px;
+    
+}
+.logo {
+    top: 0%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    font-family: Roboto-Bold;
+    font-size: xx-large;
+    color: white;
+    top: 2%;
+    left: 1%;
+}
+  
+.Build{
+    border-style: solid;
+    border-width: 2px;
+    border-right: none;
+    border-color: white;
+    color: orange;
+}
+
+.WWA {
+    color: black;
+    position: absolute;
+    top: 720px;
+    display: inline;
+    font-family: Roboto-Light;
+    left: 33%;
+
+}
+
+hr {
+    border:none;
+    border: 1px solid black;
+    
+}
+
+.hr { 
+    text-align: center;
+
+}
+
+.hr img {
+    position: relative;
+    top: -20px;
+    background:white;
+    padding:0 2px;
+}
+
+.h2 {
+    color: #0270ff;
+}
+
+.BuildEstate {
+    color: black;
+    position: absolute;
+    top: 820px;
+    display: inline;
+    font-family: Roboto-Light;
+    float: left;
+    width: 350px;
+    line-height: 25px;
+}
+
+.BuidEstateList {
+    color: grey;
+    list-style-image: url('./images/arrow_bullet.png');
+}
+
+.DreamHouse {
+    color: black;
+    position: absolute;
+    top: 820px;
+    display: inline;
+    font-family: Roboto-Light;
+    float: right;
+    width: 350px;
+    line-height: 25px;
+    left: 850px;
+}
+
+.BuidEstateList {
+    color: grey;
+    list-style-image: url('./images/arrow_bullet.png');
+}
+
+.WhatPeopleSay {
+    color: black;
+    position: absolute;
+    top: 1350px;
+    display: inline;
+    font-family: Roboto-Light;
+    left: 40%;
+}
+
+.FlexContainer {
+    display: inline-block;
+}
+
+.child1 {
+    background-color: #5ebfe6;
+    color: white;
+    position: absolute;
+    top: 1500px;
+    display: inline;
+    font-family: Roboto-Light;
+    float: left;
+    width: 350px;
+    line-height: 25px;
+}
+
+.child2 {
+    background-color: #5ebfe6;
+    color: white;
+    position: absolute;
+    top: 1500px;
+    display: inline;
+    font-family: Roboto-Light;
+    float: right;
+    width: 350px;
+    line-height: 25px;
+}
+
+.child3 {
+    background-color: #5ebfe6;
+    color: white;
+    position: absolute;
+    top: 1500px;
+    display: inline;
+    font-family: Roboto-Light;
+    float: left;
+    width: 350px;
+    line-height: 25px;
+}
+
+.GetInTouch {
+    color: black;
+    position: absolute;
+    top: 1750px;
+    display: inline;
+    font-family: Roboto-Light;
+    left: 37%;
+}
+
+.MailUs {
+    color: black;
+    position: absolute;
+    top: 2050px;
+    display: inline;
+    font-family: Roboto-Light;
+    left: 45%;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class='banner'>
+            <img class='image' src="./images/banner3.jpg">
+                <h1 class="headerText">
+            WE SHAPE OUR BUILDINGS THEREAFTER THEY SHAPE US
+                 </h1>
+             <button class="headerButton">Read More</button>
+        </div>
+        <div class="logo"><span class="Build">BUILD</span> ESTATE</div>
+    <nav class="navbar">
+        <ul class="nav-bar-new">
+          <li class="nav-link-new">HOME</li>
+          <li class="nav-link-new">ABOUT</li>
+          <li class="nav-link-new">SERVICES</li>
+          <li class="nav-link-new">CONTACT US</li>
+        </ul>
+      </nav>
+    </div>
+<br>
+<div class="WWA">
+    <div class='hr'>
+        <h1 class="Title">Who We Are</h1>
+        <hr>
+        <img src="./Shoe-Symbol-good.webp" width="30px" height="30px">
+    </div>
+    <img src="./images/about.jpg" width="400px">
+</div>
+<div class="BuildEstate">
+    <h2 class="h2">Welcome To Our Build Estate</h2>
+    <p>"If you can build buildings, why sit on the beach? WE always think of buildings in their settings, but so do other architects."</p>
+    <ol class="BuidEstateList">
+        <li class="BuildEstateListItem">International Office Buildings.</li>
+        <li class="BuildEstateListItem">Apartment On Premier House.</li>
+        <li class="BuildEstateListItem">Prices Are Low & Parking Allowance.</li>
+        <li class="BuildEstateListItem">Best Design Architecture.</li>
+      </ul>
+</div>
+<div class="DreamHouse">
+    <h2 class="h2">We Make Your Dream Home</h2>
+    <p>"For decades engineers have stood accused that their buildings do not have any cultrual value. We have attempted to liberate engineering of this accusation."</p>
+    <ol class="BuidEstateList">
+        <li class="BuildEstateListItem">Great Engineering Ideas.</li>
+        <li class="BuildEstateListItem">Planning For Future Model Buildings.</li>
+        <li class="BuildEstateListItem">Modern Apartment With Large Space.</li>
+        <li class="BuildEstateListItem">New Residental Complex Features.</li>
+      </ul>
+</div>
+<div class="WhatPeopleSay">
+    <div class='hr'>
+        <h1 class="Title">What People Say</h1>
+        <hr>
+        <img src="./Shoe-Symbol-good.webp" width="30px" height="30px">
+    </div>
+</div>
+    <div class="flexContainer">
+        <div class="boxes">
+            <div class="child1"><img src="./images/t1.jpg"></div>
+            <div class="child2"><img src="./images/t2.jpg">JENNIFER LOPEZ</div>
+            <div class="child3"><img src="./images/t3.jpg">SELENA GOMEZ</div>
+        </div>
+</div>
+<div class="GetInTouch">
+        <div class='hr'>
+            <h1 class="Title">Get In Touch With Us</h1>
+            <hr>
+            <img src="./Shoe-Symbol-good.webp" width="30px" height="30px">
+        </div>
+    </div>
+
+
+<div class="MailUs">
+    <div class='hr'>
+        <h1 class="Title">Mail Us</h1>
+        <hr>
+        <img src="./Shoe-Symbol-good.webp" width="30px" height="30px">
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.klasa1 {
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.klasa2 {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.klasa3 {
+    position: fixed;
+    bottom: 10px;
+}
+
+.link {
+    position: fixed;
+    color: red;
+    font-size: large;
+    bottom: 5px;
+    right: 5px;
+}
