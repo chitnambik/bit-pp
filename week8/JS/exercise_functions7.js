@@ -3,15 +3,15 @@
 // - outputs your fortune to the screen like so: 'You will be a X in Y, and married to Z with N kids';
 // Call that function 3 times with 3 different values for the arguments.
 
-// function tellFortune(job, location, partner, children) {
-//     var future = 'You will be a ' + job + ' in ' + location + ' and married to ' +
-//        partner + ' with ' + children + ' kids.';
-//         console.log(future);
-//     }
+function tellFortune(job, location, partner, children) {
+    var future = 'You will be a ' + job + ' in ' + location + ' and married to ' +
+       partner + ' with ' + children + ' kids.';
+        console.log(future);
+    }
     
-//     tellFortune('cook', 'Budapest', 'John', 3);
-//     tellFortune('teacher', 'Porto', 'Peter', 2);
-//     tellFortune('singer', 'Istanbul', 'Mike', 'no');
+    tellFortune('cook', 'Budapest', 'John', 3);
+    tellFortune('teacher', 'Porto', 'Peter', 2);
+    tellFortune('singer', 'Istanbul', 'Mike', 'no');
 
 
 // 2. Write a function named calculateDogAge that:
@@ -22,11 +22,11 @@
 // Bonus: Add an additional argument to the function that takes the conversion rate of human to dog
 // years.
 
-// function calculateDogAge(puppyAge) {
-//     var result = puppyAge*7;
-//     return 'Your doggie is ' + result +' years old in dog years.'
-// }
-// console.log(calculateDogAge(7))
+function calculateDogAge(puppyAge) {
+    var result = puppyAge*7;
+    return 'Your doggie is ' + result +' years old in dog years.'
+}
+console.log(calculateDogAge(7))
 
 
 // 3. Write a function named calculateSupply that:
@@ -37,13 +37,13 @@
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
 
-// function calculateSupply(age, amountPerDay) {
-//     var maxAge = 98
-//     var restOfLife = (maxAge - age) * (amountPerDay * 365)
-//     return 'You will need ' + Math.round(restOfLife) + ' mints to last you until the ripe old age of ' + maxAge + '.'
-// }
+function calculateSupply(age, amountPerDay) {
+    var maxAge = 98
+    var restOfLife = (maxAge - age) * (amountPerDay * 365)
+    return 'You will need ' + Math.round(restOfLife) + ' mints to last you until the ripe old age of ' + maxAge + '.'
+}
 
-// console.log(calculateSupply(30.7, 5,7))
+console.log(calculateSupply(30.7, 5,7))
 
 
 // 4. Create a function called celsiusToFahrenheit:
@@ -54,20 +54,20 @@
 // - Convert it to celsius and output 'NN°F is NN°C.'
 // *NN is actual temperature you need to convert
 
-// function celsiusToFahrenheit(celsius) {
-//     var CToF = (celsius*9)/5 + 32;
-//     return celsius + '°C is ' + CToF + '°F';
-//   }
+function celsiusToFahrenheit(celsius) {
+    var CToF = (celsius*9)/5 + 32;
+    return celsius + '°C is ' + CToF + '°F';
+  }
   
   
-//   function fahrenheitToCelsius(fahrenheit) {
-//     var FToC = ((fahrenheit - 32)*5)/9;
-//     var F = FToC.toFixed(2)
-//     return fahrenheit + '°F is ' + F + '°C';
-//   }
+  function fahrenheitToCelsius(fahrenheit) {
+    var FToC = ((fahrenheit - 32)*5)/9;
+    var F = FToC.toFixed(2)
+    return fahrenheit + '°F is ' + F + '°C';
+  }
 
-// console.log(celsiusToFahrenheit(27.5))
-// console.log(fahrenheitToCelsius(102))
+console.log(celsiusToFahrenheit(27.5))
+console.log(fahrenheitToCelsius(102))
 
 // 5. Create a function that validates a password to conform to the following rules:
 // - Length between 6 and 24 characters,
@@ -80,65 +80,65 @@
 // - validatePassword('iLoveYou') ➞ false // Missing a number.
 // - validatePassword('Fhg93@') ➞ true // OK!
 
-// function checkPassword(input) {
-//     let upperCase = 'There is no uppercase letter in your password!';
-//     let lowerCase = 'There is no lowercase letter in your password!';
-//     let isNumberThere = 'There is no number in your password!'
-//     let noCharacterRepeating = true;
-//     let CheckSpecialCharacters = 'Unsupported character!';
-//     let special = /[!@#$%^&*(),.<>\/?]+/;
-//     let passwordLength = "Length must be between 6 and 24 characters!";
-//     let checkForNumber = input.split('')
-//     let finalCheck = '';
+function checkPassword(input) {
+    let upperCase = 'There is no uppercase letter in your password!';
+    let lowerCase = 'There is no lowercase letter in your password!';
+    let isNumberThere = 'There is no number in your password!'
+    let noCharacterRepeating = true;
+    let CheckSpecialCharacters = 'Unsupported character!';
+    let special = /[!@#$%^&*(),.<>\/?]+/;
+    let passwordLength = "Length must be between 6 and 24 characters!";
+    let checkForNumber = input.split('')
+    let finalCheck = '';
 
-//         if(input.length > 6 && input.length < 24) {
-//             passwordLength = true;
-//         }
-//         for (i = 0; i < input.length; i++){
-//             if (input[i] == input[i].toUpperCase()){
-//                 upperCase = true;
-//             }
-//         }
-//         for (i = 0; i < input.length; i++){
-//             if (input[i] == input[i].toLowerCase()){
-//                 lowerCase = true;
-//             }
-//         }
-//         for (i = 0; i < input.length; i++){
-//             if(Number.isInteger(parseInt(checkForNumber[i]))){
-//                 isNumberThere = true;
-//             }
-//         }
+        if(input.length > 6 && input.length < 24) {
+            passwordLength = true;
+        }
+        for (i = 0; i < input.length; i++){
+            if (input[i] == input[i].toUpperCase()){
+                upperCase = true;
+            }
+        }
+        for (i = 0; i < input.length; i++){
+            if (input[i] == input[i].toLowerCase()){
+                lowerCase = true;
+            }
+        }
+        for (i = 0; i < input.length; i++){
+            if(Number.isInteger(parseInt(checkForNumber[i]))){
+                isNumberThere = true;
+            }
+        }
 
-//         for (i = 0; i < input.length; i++){
-//             if(input[i] == input[i+1] && input[i] == input[i+2]){
-//                noCharacterRepeating = 'You have a character repeating more then 2 times, diversify your password!';
-//             }
-//         }
+        for (i = 0; i < input.length; i++){
+            if(input[i] == input[i+1] && input[i] == input[i+2]){
+               noCharacterRepeating = 'You have a character repeating more then 2 times, diversify your password!';
+            }
+        }
 
-//         if(special.test(input)){
-//             CheckSpecialCharacters = true;
-//         }
+        if(special.test(input)){
+            CheckSpecialCharacters = true;
+        }
 
-//         if(passwordLength == true && upperCase == true && lowerCase == true && isNumberThere == true && noCharacterRepeating ==true){
-//             finalCheck = `Your password is up to our standards`
-//         } else{
-//             finalCheck = `Please check password requirements`
-//         }
-//     console.log(`
-//     Password requirements:
-//     Password length: ${passwordLength}
-//     Uppercase: ${upperCase}
-//     Lowercase letters: ${lowerCase}
-//     Number characters: ${isNumberThere}
-//     No repeating Characters: ${noCharacterRepeating}
-//     Special characters: ${CheckSpecialCharacters}
-//     Revision of password: ${finalCheck}
-//     `)
+        if(passwordLength == true && upperCase == true && lowerCase == true && isNumberThere == true && noCharacterRepeating ==true){
+            finalCheck = `Your password is up to our standards`
+        } else{
+            finalCheck = `Please check password requirements`
+        }
+    console.log(`
+    Password requirements:
+    Password length: ${passwordLength}
+    Uppercase: ${upperCase}
+    Lowercase letters: ${lowerCase}
+    Number characters: ${isNumberThere}
+    No repeating Characters: ${noCharacterRepeating}
+    Special characters: ${CheckSpecialCharacters}
+    Revision of password: ${finalCheck}
+    `)
 
-// }
+}
 
-// checkPassword('hello?')
+checkPassword('hello?')
 
 // 6. Create a function that finds how many prime numbers there are, up to the given integer.
 // Examples: primeNumbers(10) ➞ 4 // 2, 3, 5 and 7
@@ -172,22 +172,22 @@ console.log(primenumber(20))
 // diamondArrays(2) ➞ [1, 2, 2, 1]
 // diamondArrays(5) ➞ [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 2, 2, 1]
 
-// function DiamondArray(a) {
-//     var b = [];
+function DiamondArray(a) {
+    var b = [];
 
-//     for (var i = 1; i <= a; i++) {
-//       for (var j = 0; j < i; j++) {
-//         b.push(i);
-//       }
-//     }
+    for (var i = 1; i <= a; i++) {
+      for (var j = 0; j < i; j++) {
+        b.push(i);
+      }
+    }
 
-//     for (var m = a - 1; m > 0; m--) {
-//       for (var n = 0; n < m; n++) {
-//         b.push(m);
-//       }
-//     }
+    for (var m = a - 1; m > 0; m--) {
+      for (var n = 0; n < m; n++) {
+        b.push(m);
+      }
+    }
 
-//     return b;
-//   }
+    return b;
+  }
 
-//   console.log(DiamondArray(6));
+  console.log(DiamondArray(6));

@@ -8,7 +8,7 @@ function greaterNumber(one, two) {
     }
 }
 
-// console.log(greaterNumber(16, 9))
+console.log(greaterNumber(16, 9))
 
 // 2. Write a program that checks if a given number is odd.
 function oddNumber(one) {
@@ -20,6 +20,7 @@ function oddNumber(one) {
     console.log(oddNumber(8));
 
 // 3. Write a program that checks if a given number is a three digit long number.
+
     function threeDigit(one) {
         if (one > 99 && one < 1000) {
             return 'three digit long number'
@@ -28,6 +29,7 @@ function oddNumber(one) {
     console.log(threeDigit(8889))
 
 // 4. Write a program that calculates an arithmetic mean of four numbers.
+
     function arithmetic (one, two, three, four) {
         arithmetic = (one+two+three+four)/4
         return arithmetic
