@@ -6,7 +6,7 @@ function rotate (a, b) {
         a.push(a.shift())
         } return a
     }
-    console.log(rotate([1,2,3,4,5,6], 2))
+    console.log(rotate([1,2,3,4,5,6], 2));
 
 // 2. Write a function that takes a number and returns array of its digits.
 
@@ -14,7 +14,7 @@ function numberSplit(a){
     let result = a.toString().split('');
     return result
 }
-console.log(numberSplit(292343))
+console.log(numberSplit(292343));
 
 // 3. Write a program that prints a multiplication table for numbers up to 12.
 
@@ -25,7 +25,7 @@ function multiplication (a) {
         console.log(result)
     } return 'kraj zadatka'
 }
-console.log(multiplication(78))
+console.log(multiplication(78));
 
 // 4. Write a function to find the maximum element in array of numbers. Filter out all non-number
 // elements.
@@ -38,7 +38,7 @@ for(var i = 0; i <= a.length; i++){
     }
 } return b
 } 
-console.log(maxElement([2, 789, 'fog', NaN, 'stagod', 74, 89, 102]))
+console.log(maxElement([2, 789, 'fog', NaN, 'stagod', 74, 89, 102]));
 
 // 5. Napisati funkciju koja vraca najveci I najmanji element niza. Rezultat prikazati kao niz.
 // 
@@ -87,7 +87,7 @@ console.log(mediana([3, 5, 6, 8, 7, 8, 9]))
             return a
             } 
         }  
-    console.log(firstLastMid([]))
+    console.log(firstLastMid([1, 3, 4, 5, 6, 8, 9, 0, 5, 4, 3, 3]))
 
 // 8. Write a function to find the average of N elements. Make the function flexible to receive 
 // dynamic number or parameters.
@@ -116,3 +116,78 @@ function sumOfN () {
     } return [arguments[i] > divided]
 }
 console.log(sumOfN[3, 5, 7, 90, 3, 7, 15])
+
+// 10. The body mass index (BMI) is the ratio of the weight of a person (in kilograms) to the
+// square of the height (in meters). Write a function that takes two parameters, weight and
+// height, computes the BMI, and prints the corresponding BMI category:
+//  Starvation: less than 15
+//  Anorexic: less than 17.5
+//  Underweight: less than 18.5
+//  Ideal: greater than or equal to 18.5 but less than 25
+//  Overweight: greater than or equal to 25 but less than 30
+//  Obese: greater than or equal to 30 but less than 40
+//  Morbidly obese: greater than or equal to 40
+
+function BMI (weight, height){
+    var result = (weight/(height**2));
+    if (result < 15) {
+        result = 'Your BMI ' + result + ' falls within the starvation range';    
+    } else if((result > 15) && (result < 17.5)){
+        result = 'Your BMI ' + result + ' falls within the anorexic weight range';
+    } else if((result > 17.5) && (result < 18.5 )){
+        result = 'Your BMI ' + result + ' falls within the underweight range';
+    } else if((result > 18.5) && (result < 25 )){
+        result = 'Your BMI ' + result + ' falls within the ideal range';
+    } else if((result > 25) && (result < 30 )){
+        result = 'Your BMI ' + result + ' falls within the overweight range';
+    } else if((result > 30) && (result < 40 )){
+        result = 'Your BMI ' + result + ' falls within the obese range';
+    } else {
+        result = 'Your BMI ' + result + ' falls within the morbidly obese range';
+    }
+   return result;
+}
+console.log(BMI(64, 1.81));
+
+
+// 11. Write a function that takes a list of strings and prints them, one per line, in a rectangular
+// frame.:
+// For example the list [&quot;Hello&quot;, &quot;World&quot;, &quot;in&quot;, &quot;a&quot;, &quot;frame&quot;] gets
+// printed as:
+// *********
+// * Hello *
+// * World *
+// * in    *
+// * a     *
+// * frame *
+// *********
+
+function square(input){
+    var longest = 0;
+    var longestWord = '';
+    var output = 0;
+    var print = '';
+        for (let i = 0; i<input.length; i++){
+            if(input[i].length > longest){
+                longest = input[i].length;
+                longestWord = input[i];
+            }
+        }
+        let borders ='*'.repeat(longest+4);
+        console.log(borders);
+            let stars = '';
+            for (let j = 0; j < input.length; j++){
+                if (input[j] !== longestWord){
+                    output = longest - input[j].length
+                    stars = `* ${input[j]+' '.repeat(output)} *`;
+                }
+                if(input[j] === longestWord){
+                    stars = `* ${longestWord} *`;    
+                } 
+                print = `${console.log(stars)}`;
+            }  
+
+       console.log(borders);
+
+}
+square(['ja', 'volim', 'cokoladu','sa','lesnicima', 'i', 'marcipanom'])

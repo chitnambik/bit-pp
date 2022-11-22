@@ -85,7 +85,6 @@
 // Output: Your password is cool!
 
 function password (a){
-    
     function successCallback(a){
         var numbers = /[0-9]/g;
         if(a.length >= 6 && a.value.match(numbers)) {
