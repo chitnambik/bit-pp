@@ -84,24 +84,26 @@
 // Input: JSGuru123
 // Output: Your password is cool!
 
-// function password(a){
-//     function successCallback (a){
-//         for(var i = 0; i <= a.length; i++){
-//             if(a.length >= 5 && a[i] == Number){
-//                 return function;
-//             } 
-//         }
-//     } 
-//     function errorCallback(a){
-//         for(var i = 0; i <= a.length; i++){
-//             if(a.length > 5 || a.length < 1 && a[i] !== Number){
-//                 return false;
-//              }
-//         }
-//     } 
-// }
-
-// console.log(password('JSGuru'))
+function password (a){
+    
+    function successCallback(a){
+        var numbers = /[0-9]/g;
+        if(a.length >= 6 && a.value.match(numbers)) {
+            console.log('Your password is cool!')
+        } else {
+            console.log('Your password is invalid!')
+        }
+    } 
+    function errorCallback(a){
+        var numbers = /[0-9]/g;
+        if(a.length < 6 && (!a.value.match(numbers))) {
+            console.log('Your password is invalid!') 
+        } else {
+            console.log('Your password is cool!')
+        }
+    } return [successCallback, errorCallback]
+}
+console.log(password('JSGuru'))
 
 // 7. Write a function that filters elements of the given array so that they satisfy a condition
 // given by the callback function.
@@ -111,11 +113,11 @@
 // function filter(a){
 //     function odd(a){
 //         const b = []
-//             for(var i = 0; i <= a.length; i++){
+//             for(var i = 0; i < a.length; i++){
 //                 if(a[i] % 2 !== 0){
 //                     b.push(a[i])
 //             } 
 //         } return b
 //     } return odd(a);
 // }
-// console.log(filter([2, 8, 11, 4, 9, 3]))
+// console.log(filter([2, 8, 11, 4, 9, 3, 7, 9, 10]))
