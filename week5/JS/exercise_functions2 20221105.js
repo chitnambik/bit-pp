@@ -156,13 +156,67 @@ console.log(firstCharacterAndAdd('Pokazi mi prvih n karaktera ovog stringa', 7))
 
 // ['1', '21', undefined, '42', '1e+3', Infinity] -> [1, 21, 42, 1000]]
 
+function arrToString(a) {
+    var result = [];
+        for (let i = 0; i < a.length; i++) {
+                if (a[i] === null) {
+                        continue;
+                } else if (a[i] === undefined) {
+                        continue;
+                } else if (a[i] === Infinity) {
+                        continue;
+                } else if (isNaN(a[i])) {
+                        continue;
+                } else {
+                result.push(a[i])
+            }
+        } return result
+  }
+
+  console.log(arrToString(['1', '21', undefined, null, '42', '1e+3', Infinity, '123']));
+
 // 12. Write a function to calculate how many years there are left until retirement based on the
 // year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is
 // already retired, a proper message should be displayed.
+
+function retirement(year, gender) {
+    var age = (2022 - year);
+    var result = '';
+    if (gender === 'female') {
+        if (age < 60) {
+          result = 'You will retire in ' + (60 - age) + ' years'
+        } else {
+          result = 'Enjoy retirement!'
+        }
+      }
+    if (gender === 'male') {
+        if (age < 65) {
+            result = 'You will retire in ' + (65 - age) + ' years'
+      } else {
+        result = 'Enjoy retirement!'
+      }
+    } return result
+  }
+  console.log(retirement(1997, 'male'))
 
 // 13. Write a function to humanize a number (formats a number to a human-readable string) with
 // the correct suffix such as 1st, 2nd, 3rd or 4th.
 // 1 -> 1st
 // 11 -> 11th
 
+function humanise(a) {
+    var result = '';
 
+    if (a == 1 || a == 21 || a == 31 || a == 41 || a == 51 || a == 61 || a == 71 || a == 81 || a == 91){
+      result = a + 'st';
+    } else if (a == 2 || a == 22 || a == 32 || a == 42 || a == 52 || a == 62 || a == 72 || a == 82 || a == 92){
+      result = a + 'nd';
+    } else if (a == 3 || a == 23 || a == 33 || a == 43 || a == 53 || a == 63 || a == 732 || a == 83 || a == 93){
+      result = a + 'rd';
+    } else if (a < 101) {
+      result = a + 'th';
+    } else {
+        result = 'you are asking too much :)'
+    } return result
+  }
+console.log(humanise(221))
