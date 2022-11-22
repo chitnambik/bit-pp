@@ -30,19 +30,92 @@
 // Input: prograMming
 // Output: progra**ing, 2
 
-function replace1 (a) {
-    return replace();
-function replace () {
-    counter = 0;
-    const b = [];
-    for(var i = 0; i <= a.length; i++){
-        if(a[i] == 'm' || a[i] == 'M'){
-            counter ++;
-            b.push('*');
-        } else if(a[i] !== 'm' || a[i] !== 'M'){
-                b.push(a[i]);  
-            }
-        } return 'output: ' + counter + ', ' + b.join('');
-    } 
-}
-console.log(replace1('prograMming'))
+// function replace1 (a) {
+//     return replace();
+// function replace () {
+//     counter = 0;
+//     const b = [];
+//     for(var i = 0; i <= a.length; i++){
+//         if(a[i] == 'm' || a[i] == 'M'){
+//             counter ++;
+//             b.push('*');
+//         } else if(a[i] !== 'm' || a[i] !== 'M'){
+//                 b.push(a[i]);  
+//             }
+//         } return 'output: ' + counter + ', ' + b.join('');
+//     } 
+// }
+// console.log(replace1('prograMming'))
+
+// 4. Write a function with parameters name and surname that returns a function that
+// suggests an email in the form name.surname@gmail.com.
+// Input: pera peric
+// Output: pera.peric@gmail.com
+
+// function email(a, b) {
+//     return form(a, b);
+//     function form() {
+//         return a + '.'+ b + '@gmail.com'
+//     }
+// }
+// console.log(email('pera', 'peric'))
+
+// 5. Write a function that returns a function that calculates a decimal value of the given octal
+// number.
+// Input: 034
+// Output: 28
+
+
+// function octalToDecimal(a) {
+//     return convert(a)
+//     function convert(){
+//     var dec = parseInt(a,8);
+//     return dec;
+//     }
+// }
+// console.log(octalToDecimal('034'));
+
+// 6. Write a function that checks if a given string is valid password. The password is valid if it
+// is at least 6 characters long and contains at least one digit. The function should receive
+// two callbacks named successCallback and errorCallback that should be called in case
+// password is correct or invalid.
+// Input: JSGuru
+// Output: Your password is invalid!
+// Input: JSGuru123
+// Output: Your password is cool!
+
+// function password(a){
+//     function successCallback (a){
+//         for(var i = 0; i <= a.length; i++){
+//             if(a.length >= 5 && a[i] == Number){
+//                 return function;
+//             } 
+//         }
+//     } 
+//     function errorCallback(a){
+//         for(var i = 0; i <= a.length; i++){
+//             if(a.length > 5 || a.length < 1 && a[i] !== Number){
+//                 return false;
+//              }
+//         }
+//     } 
+// }
+
+// console.log(password('JSGuru'))
+
+// 7. Write a function that filters elements of the given array so that they satisfy a condition
+// given by the callback function.
+// Input: [2, 8, 11, 4, 9, 3], callback function checks if the number is odd
+// Output: [11, 9, 3]
+
+// function filter(a){
+//     function odd(a){
+//         const b = []
+//             for(var i = 0; i <= a.length; i++){
+//                 if(a[i] % 2 !== 0){
+//                     b.push(a[i])
+//             } 
+//         } return b
+//     } return odd(a);
+// }
+// console.log(filter([2, 8, 11, 4, 9, 3]))
