@@ -1,4 +1,4 @@
-function multiplyByTwo(inputArray) {
+ var multiplyByTwo = function (inputArray) {
     var newArray = [];
     for (var i = 0; i < inputArray.length; i++) {
         var element = inputArray[i];
