@@ -32,5 +32,5 @@
 // se ne ponavljaju.
 
 // 8. Kreirati funkciju koja ulazni niz deli u podnizove duzine N i ispisuje ih.
-// Primer 1: ([2, 3, 4, 5], N=2) =&gt; [[2, 3], [4, 5]]
-// Primer 2: ([2, 3, 4, 5, 6], N=3) =&gt; [[2, 3, 4], [5, 6]]
+// Primer 1: ([2, 3, 4, 5], N=2) => [[2, 3], [4, 5]]
+// Primer 2: ([2, 3, 4, 5, 6], N=3) => [[2, 3, 4], [5, 6]]

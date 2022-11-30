@@ -4,91 +4,81 @@
 // Input: e = 3, a = [5, -4.2, 18, 7]
 // Output: no
 
-// function isNumberPresent(e, a) {
-//   let result = "";
+// function isNumberPresent(a, e) {
+//   let result = '';
 //   for (let i = 0; i < a.length; i++) {
 //     if (e == a[i]) {
-//       result = "e is in the array";
+//       result = 'e is in the array';
 //       break;
 //     } else {
-//       result = "e is not in the array";
+//       result = 'e is not in the array';
 //     }
-//   }
-
-//   return result;
+//   } return result;
 // }
-// console.log(isNumberPresent(-18, [5, -4.2, 3, 7]));
+// console.log(isNumberPresent([5, -4.2, 3, 7], 71));
 
 // 2. Write a program that multiplies every positive element of a given array by 2.
 // Input array: [-3, 11, 5, 3.4, -8]
 // Output array: [-3, 22, 10, 6.8, -8]
 
-function multiplyEven(a) {
-  let result = [];
-
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] > 0) {
-      result[i] = a[i] * 2;
-    }
-  }
-  return result;
-}
-
-console.log(multiplyEven([-3, 11, 5, 3.4, -8]));
+// function multiplyPositive(a){
+//   for(let i = 0; i < a.length; i++)
+//       if (a[i] > 0){
+//           a[i] *= 2
+//     } return a
+// }
+// console.log(multiplyPositive([-3, 11, 5, 3.4, -8]))
 
 // // 3. Write a program that finds the minimum of a given array and prints out its value and
 // // index.
 // // Input array: [4, 2, 2, -1, 6]
 // // Output: -1, 3
 
-// function minimumArray(array) {
-//   m = array[0];
-//   k = 0;
-//   for (let i = 1; i < array.length; i++) {
-//     if (array[i] < m) {
-//       m = array[i];
-//       k = i;
+// function min(a) {
+//   var number = a[0];
+//   var index = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] < number) {
+//       number = a[i];
+//       index = i;
 //     }
-//   }
-//   return [m, k];
+//   } return ['najmanji broj je ' + number, 'a njegov indeks je ' + index];
 // }
-// console.log("3. Zadatak: " + minimumArray([-8, 2, 2, -1, 6, 5, -5, -2]));
+// console.log(min([-8, 2, 2, -1, 6, -78, 5, -5, -2]));
 
 // // 4. Write a program that finds the second smallest number and prints out its value.
 // // Input array: [4, 2, 2, -1, 6]
 // // Output: 2
 
-// function sum(arr) {
-//   let result = [];
-//   let min = arr[0];
-
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] < min) {
-//     }
-//   }
-
-//   return result;
+// function secondSmallest(a) {
+//   let min = a[0];
+//   let secondToMin = 0;
+//   for (i = 0; i < a.length; i++) {
+//       if (a[i] == min) {
+//           secondToMin = min;
+//       } else if (a[i] < min) {
+//           secondToMin = min;
+//           min = a[i];
+//       } else if (a[i] < secondToMin) {
+//           secondToMin = a[i];
+//       }
+//   } return secondToMin
 // }
-
-// console.log(sum([4, 2, 2, -1, 6]));
+// console.log(secondSmallest([4, 2, 2, 0, -1, 6,]))
 
 // // 5. Write a program that calculates the sum of positive elements in the array.
 // // Input array: [3, 11, -5, -3, 2]
 // // Output: 16
 
-// function sum(num) {
+// function sumPositive(a) {
 //   let result = 0;
-
-//   for (let i = 0; i < num.length; i++) {
-//     if (num[i] > 0) {
-//       result += num[i];
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] > 0) {
+//       result += a[i];
 //     }
-//   }
-
-//   return result;
+//   } return result;
 // }
-
-// console.log(sum([3, 11, -5, -3, 2, 2]));
+// console.log(sumPositive([3, 11, -5, -3, 2, 7, 2]));
 
 // // 6. Write a program that checks if a given array is symmetric. An array is symmetric if it can
 // // be read the same way both from the left and the right hand side.
@@ -97,20 +87,17 @@ console.log(multiplyEven([-3, 11, 5, 3.4, -8]));
 // // Input array: [3, 4, 12, 8]
 // // Output: The array isn’t symmetric.
 
-// function isSymetric(array) {
-//   a = 0;
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] == array[array.length - i - 1]) {
-//       a++;
-//     }
-//   }
-//   if (a == array.length) {
-//     return "Array IS symmetric!";
-//   } else {
-//     return "Array  is NOT symmetric!";
-//   }
-// }
-// console.log("6. Zadatak: " + isSymetric([3, 2, 4, -2, 7, -2, 4, 2, 3]));
+function isSymmetric(a){
+var b = [];
+var result = ''
+    for(let i = a.length - 1; i >= 0; i--) {
+        b.push(a[i])
+        while(b == a){
+            result = 'The array is symmetric'
+        }
+    } return result
+}
+console.log(isSymmetric([2, 4, -2, 7, -2, 4, 2]));
 
 // // 7. Write a program that intertwines two arrays. You can assume the arrays are of the same
 // // length.
@@ -174,3 +161,4 @@ console.log(multiplyEven([-3, 11, 5, 3.4, -8]));
 // }
 
 // console.log(sum(78, 3, [2, -2, 33, 12, 5, 8]));
+
