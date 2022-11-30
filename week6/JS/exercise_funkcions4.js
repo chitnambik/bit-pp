@@ -87,78 +87,92 @@
 // // Input array: [3, 4, 12, 8]
 // // Output: The array isn’t symmetric.
 
-function isSymmetric(a){
-var b = [];
-var result = ''
-    for(let i = a.length - 1; i >= 0; i--) {
-        b.push(a[i])
-        while(b == a){
-            result = 'The array is symmetric'
-        }
-    } return result
-}
-console.log(isSymmetric([2, 4, -2, 7, -2, 4, 2]));
+// function isSymmetric(a){
+// var b = [];
+// var result = ''
+//     for(let i = a.length - 1; i >= 0; i--) {
+//         b.push(a[i])
+//         if(a[i] !== b[i]){
+//             result = 'The array is not symmetric'
+//         } else {
+//             result = 'The array is symmetric'
+//         } i--
+//     } return result
+// }
+// console.log(isSymmetric([2, 4, -2, 7, 'n', -2, 4, 2]));
 
 // // 7. Write a program that intertwines two arrays. You can assume the arrays are of the same
 // // length.
 // // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // // Output array: [4, 3, 5, 8, 6, 11, 2, 9]
 
-// function intertwinesTwoArrays(array1, array2) {
-//   var j = 0;
-//   var e = [];
-//   for (let i = 0; i < array1.length; i++) {
-//     e[j] = [array1[i], array2[i]];
-//     j++;
+// function intertwine(a, b) {
+//   const c = [];
+//   for (let i = 0; i < a.length; i++){
+//     c.push(a[i], b[i]);
 //   }
-//   return e;
+//   return c;
 // }
-// console.log("7. Zadatak: " + intertwinesTwoArrays([4, 5, 6, 2], [3, 8, 11, 9]));
+// console.log(intertwine([4, 5, 6, 2], [3, 8, 11, 9]));
 
 // // 8. Write a program that concatenates two arrays.
 // // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // // Output array: [4, 5, 6, 2, 3, 8, 11, 9]
 
-// function sum(arr1, arr2) {
-//   return arr1.concat(arr2);
+// function concatenate(a, b) {
+//     for (let i = 0; i < b.length; i++){
+//         a.push(b[i]);
+//     } return a;
 // }
-
-// console.log(sum([4, 5, 6, 2], [3, 8, 11, 9]));
+// console.log(concatenate([4, 5, 6, 2],[3, 8, 11, 9]));
 
 // // 9. Write a program that deletes a given element e from the array a.
 // // Input: e = 2, a = [4, 6, 2, 8, 2, 2]
 // // Output array: [4, 6, 8]
 
-// function sum(num, arr) {
-//   let result = [];
-
-//   for (let i = 0; i < arr.length; i++) {
-//     if (num !== arr[i]) {
-//       result[i] = arr[i];
+// function deleteE(a, e) {
+//   const b = [];
+//   for (let i = 0; i < a.length; i++) {
+//     if (e !== a[i]) {
+//       b.push(a[i]);
 //     }
-//   }
-//   return result;
+//   } return b;
 // }
 
-// console.log(sum(2, [4, 6, 2, 8, 2, 2]));
+// console.log(deleteE([4, 6, 2, 8, 2, 2], 2));
 
 // // 10. Write a program that inserts a given element e on the given position p in the array a. If
 // // the value of the position is greater than the array length, print the error message.
 // // Input: e = 78, p = 3, a = [2, -2, 33, 12, 5, 8]
 // // Output: [2, -2, 33, 78, 12, 5, 8]
 
-// function sum(num, pos, arr) {
-//   let result = [];
-
-//   for (let i = 0; i < arr.length; i++) {
-//     result[i] = arr[i];
-//     if (result.indexOf([i]) === pos) {
-//       result.push(num);
-//     }
-//   }
-
-//   return result;
+// function insertE(a, e, p){
+//     const b = []
+//     if(p > a.length){
+//         console.log('the array is not that long');
+//     } else {
+//     for(let i = 0; i < a.length; i++){
+//         if(i == p){
+//             b.insert(e)
+//         } else if(a[i] !== p){
+//             b.push(a[i])
+//             }
+//         } 
+//     } return b
 // }
+// console.log(insertE([2, -2, 33, 12, 5, 8], 78, 3))
 
-// console.log(sum(78, 3, [2, -2, 33, 12, 5, 8]));
-
+function insertE(a, e, p){
+    const b = []
+    if(p > a.length){
+        console.log('the array is not that long');
+    } else {
+    for (let i = 0; i < a.length; i++){
+        if(p == i){
+        b.push(a[i-1] = e);
+        // a[i-1] = p;
+        }
+    } 
+  } return a
+}
+console.log(insertE([2, -2, 33, 12, 5, 8], 78, 3))
