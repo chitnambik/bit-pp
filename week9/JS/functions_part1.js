@@ -21,7 +21,7 @@ function numbers(a) {
         } return result
     } 
 
-// console.log(numbers('1b8552abd'))
+console.log(numbers('1b8552abd'))
 
 // // regular function 5
 function numbers(input){
