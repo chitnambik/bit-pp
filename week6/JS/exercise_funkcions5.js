@@ -128,19 +128,18 @@ console.log(sortDES([ 13, 11, 15, 5, 6, 1, 8, 12 ]))
 // Output: 2350000
 
 function loop (){
-    let sum=0;
-    let sub=0;
-    for (let i=0; i<=1000;i++){
+    let sum = 0;
+    let sub = 0;
+    for (let i = 0; i <= 1000;i++){
         if (i % 2 == 0){
             sum += i;
         }
     }
-    for (let i=0; i<=500;i++ ){
-        if(i%2!==0){
-            sub-=i;
+    for (let i = 0; i <= 500; i++ ){
+        if(i % 2 !== 0){
+            sub -= i;
         }
-    }
-    return (sum+sub)*12.5
+    } return (sum + sub)*12.5
 }
 console.log(loop())
 
@@ -149,13 +148,12 @@ console.log(loop())
 // Input: ['M', 'Anne', 12, 'Steve', 'Joe', 'John', 'David', 'Mark', true, 'A']
 
 function array (a){
-    let result='';
-    for(let i=0; i<a.length;i++){
+    let result ='';
+    for(let i = 0; i < a.length; i++){
         if(typeof(a[i]) == 'string' && a[i].length > 2){
-            result+=a[i].slice(0, 2)
+            result +=a [i].slice(0, 2)
         }
-    }
-    return result;
+    } return result;
 }
 console.log(array(['M','Anne',12,'Steve','Joe','John','David','Mark',true,'A']))
 
@@ -168,8 +166,7 @@ function reverseString(a) {
     var b = '';
     for (var i = a.length - 1; i >= 0; i--) {
         b += a[i];
-    }
-    return b;
+    } return b;
 }
 console.log(reverseString('Belgrade Institute of Technology'));
 
@@ -204,8 +201,7 @@ function primeOrNot (a) {
         if(a % i === 0) {
           return false;
         }
-      }
-      return true;  
+      } return true;  
     }
   }
   console.log(primeOrNot(15));
@@ -234,11 +230,8 @@ function symmetry(a){
     result = 'The string is symmetric';
   } else {
     result = 'The sting is asymmetric';
-  }
-
-  return result;
+  } return result;
 }
-
 console.log(symmetry('ana voli milovana'));
 
 // 12. Write a program that calculates the greatest common divisor of two integers. Note: The
